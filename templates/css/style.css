@@ -1,0 +1,33 @@
+body {
+  max-width: 1000px;
+  padding: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+div, section, main, aside, header, footer {
+  border: 1px solid lightgray;
+  padding: .5em;
+  margin-bottom: 1em;
+}
+
+img.hero {
+  width: 400px;
+}
+img.girl {
+  width: 400px;
+}
+img.logo {
+  width: 400px;
+}
+img.employee {
+  width: 400px;
+}
+img.muffins {
+  width: 400px;
+}
+img.hands {
+  width: 400px;
+}
+img.machines {
+  width: 400px;
+}
