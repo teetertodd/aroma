@@ -1,22 +1,93 @@
 body {
-  max-width: 1000px;
-  padding: 1em;
   font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+.hero-image {
+    height: 90vh;
+    background-image: url(photos/shadow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-image__container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    height: 100%;
 }
 
-div, section, main, aside, header, footer {
-  border: 1px solid lightgray;
-  padding: .5em;
-  margin-bottom: 1em;
+.hero-image__text {
+    z-index: 100;
+    padding: 5em;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    left: 50px;
 }
 
-img.hero {
-  width: 400px;
+.hero-image:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
 }
+.logo {
+  position: absolute;
+  top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  left: 0;
+  right: 0;
+  display: block;
+  top: 130px;
+}
+.nav {
+  position: absolute;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  top: 65%;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: center;
+  text-align: center;
+
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+.nav ul li { display: inline; }
+.nav ul li a { text-decoration: none; }
+.button {
+    padding: 1em;
+    margin: 2em 1em 2em 2em;
+    display: inline-block;
+    border: 3px solid #D2D1C0;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .3s background-color ease-in-out;
+}
+.button:hover, .button:focus {
+    background-color: #D2D1C0;
+}
+
+
+main {
+    padding: 10em;
+}
+
 img.girl {
-  width: 400px;
-}
-img.logo {
   width: 400px;
 }
 img.employee {
