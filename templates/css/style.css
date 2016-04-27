@@ -1,21 +1,40 @@
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* IE < 8 */
+}
 body {
   font-family: Helvetica, Arial, sans-serif;
-   background-color: rgb(71,78,89);
+   background-color: black;
    margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  padding: .5em;
 }
 .events {
   position: absolute;
   color: white;
   padding-left: 1em;
 }
-#nav {
-  position: relative;
-  top: 0%;
-  color: orange;
-
-  HTML  CSS  JS  Result
-  Edit on
-  a.menu-link {
+.largenav {
+  display: none;
+}
+a.menu-link {
           float: right;
               display: block;
               padding: 1em;
@@ -95,6 +114,7 @@ body {
           }
           nav[role=navigation].active {
               max-height: 15em;
+              margin-top: 3.25em;
           }
           nav[role=navigation] ul {
               margin: 0;
@@ -105,6 +125,7 @@ body {
               display: block;
               padding: 0.8em;
               border-bottom: 1px solid #808080;
+              color: white;
           }
 
           @media screen and (min-width:800px) {
@@ -113,21 +134,13 @@ body {
               }
               .js nav[role=navigation] {
                   max-height: none;
-              }
-              nav[role=navigation] ul {
-                  margin: 0 0 0 -0.25em;
-                  border: 0;
+                  display: none;
               }
 
-              nav[role=navigation]  li {
-                  display: inline-block;
-                  margin: 0 0.25em;
-              }
-              nav[role=navigation] li a {
-                  border: 0;
-              }
           }
-}
+/* End of Navigation */
+
+
 .hero-image {
     height: 60vh;
     background-image: url(photos/shadow.jpg);
@@ -146,13 +159,11 @@ body {
 
 .hero-image__text {
     z-index: 100;
-    margin-top:21%;
     padding: 2em;
     color: white;
     font-family: Helvetica, Arial, sans-serif;
     font-size: .9em;
     text-align: center;
-    left: 50px;
 }
 
 .hero-image:after {
@@ -166,32 +177,62 @@ body {
     content: "";
 }
 .logo {
-  position: absolute;
   margin-top: .0001%;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  padding-bottom: 1em;
+  width: 50%;
   left: 0;
   right: 0;
   display: block;
-  top: 106px;
 }
-.african {
+.menu-link {
+  position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    color: white;
+}
+.eventphoto h3 {
+  margin-bottom: 0;
+  color: white;
+}
+.eventphoto {
   margin: 2%;
+  margin-bottom: 1em;
   width: 96%;
-  background-image: url(photos/african.jpg);
+  max-width: 470px;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.african h2 {
+.eventphoto-1 {
+    background-image: url(photos/african.jpg);
+}
+.eventphoto-2 {
+    background-image: url(photos/loose.jpg);
+}
+.eventphoto-3 {
+    background-image: url(photos/green.jpg);
+    background-position: 0 -100px;
+}
+.eventphoto h2 {
   color: #D2D1C0;
-  background-color: rgb(71,78,89);
+  background-color: black;
   display: inline-block;
   padding: .5em;
-  margin-top: 1em;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
 }
-
+.contentbox {
+  background-color: #D2D1C0;
+  margin: 0;
+  margin-top: 0;
+  width: 100%;
+  padding: 2em;
+}
 
 .blends {
   width: 100%;
@@ -214,11 +255,9 @@ ul {
     padding: 0;
     list-style-type: none;
 }
-main {
-    padding: 10em;
-}
+
 footer {
-  background-color: #D2D1C0
+  background-color: white;
 }
 footer {
   text-align: center;
@@ -237,7 +276,7 @@ dd {
   margin-left: 0;
   font-size: 1em;
   line-height: 1.5;
-  color: white;
+  color: rgb(71,78,89);
 }
 .clearfix:after {
   display: block;
@@ -251,6 +290,81 @@ dd {
 .muffins {
   width: 100%;
 }
+
+@media screen and (min-width: 700px)
+{
+.eventphoto {
+  float: left;
+  width: 31.33333%;
+  margin: 1%;
+}
+.eventphoto h2 {
+  font-size: 1em;
+}
+}
+@media screen and (min-width: 800px)
+{
+  .hero-image {
+      height: 100vh;
+    }
+    .hero-image__text {
+        padding: 5em;
+      }
+  .button {
+      padding: 1em;
+      margin: 2em 1em 0em 2em;
+      display: inline-block;
+      border: 3px solid #D2D1C0;
+      color: white;
+      text-decoration: none;
+      font-family: Helvetica, sans-serif;
+      transition: .3s background-color ease-in-out;
+  }
+  .button:hover, .button:focus {
+      background-color: #D2D1C0;
+  }
+div.fixed-rectangle {
+     width: 100%;
+     height: 100px;
+     background-color: rgb(71,78,89);
+}
+
+.largenav {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  top: 65%;
+  left: 0;
+  right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: center;
+  text-align: center;
+}
+.largenav ul {
+  padding: 0;
+  margin: 0;
+}
+.largenav ul li { display: inline; }
+.largenav ul li a { text-decoration: none; }
+
+h1 {
+  font-size: 2.5em;
+}
+footer {
+  margin: 0 auto;
+}
+.contact {
+  float: left;
+  width: 33.3%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+}
+
+
+
 @media screen and (min-width: 900px)
 {
   .hero-image {
@@ -314,44 +428,8 @@ text-align: center;
 #nav ul li a { text-decoration: none; }
 }
 
-@media screen and (min-width: 800px)
-{
-  #button {
-      padding: 1em;
-      margin: 2em 1em 2em 2em;
-      display: inline-block;
-      border: 3px solid #D2D1C0;
-      color: white;
-      text-decoration: none;
-      font-family: Helvetica, sans-serif;
-      transition: .3s background-color ease-in-out;
-  }
-  #button:hover, .button:focus {
-      background-color: #D2D1C0;
-  }
-div.fixed-rectangle {
-     width: 100%;
-     height: 100px;
-     background-color: rgb(71,78,89);
-}
 
-#nav {
-  position: absolute;
-  padding: 0;
-  margin: 0 auto;
-  list-style-type: none;
-  top: 65%;
-  left: 0;
-  right: 0;
-  margin-left: 0;
-  margin-right: 0;
-  display: center;
-  text-align: center;
-}
-#nav ul li { display: inline; }
-#nav ul li a { text-decoration: none; }
-}
-}
+
 .events {
   position: absolute;
   font-size: 1.5em;
@@ -364,18 +442,3 @@ div.fixed-rectangle {
 
 
 }
-@media screen and (min-width: 1000px)
-{
-  h1 {
-    font-size: 2.5em;
-  }
-  footer {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  .contact {
-    float: left;
-    width: 33.3%;
-    padding-top: 1em;
-    padding-bottom: 2em;
-  }
