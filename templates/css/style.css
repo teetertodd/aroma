@@ -407,6 +407,9 @@ footer {
     width: 31.33333%;
     margin: 1%;
     min-height: 300px;
+    max-width: 100%;
+    left: 50%;
+    right: 50%;
   }
   .eventphoto h2 {
     font-size: 1em
@@ -532,7 +535,7 @@ div.fixed-rectangle {
     width: 31.33333%;
     margin: 1%;
     min-height: 300px;
-    width: 100%;
+    text-align: center;
   }
   .menu h2 {
     font-size: 1em
