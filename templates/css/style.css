@@ -532,6 +532,7 @@ div.fixed-rectangle {
     width: 31.33333%;
     margin: 1%;
     min-height: 300px;
+    width: 100%;
   }
   .menu h2 {
     font-size: 1em
