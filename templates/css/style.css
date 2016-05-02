@@ -13,7 +13,7 @@
     zoom: 1; /* IE < 8 */
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
    background-color: black;
    margin: 0;
 }
@@ -167,7 +167,7 @@ a.menu-link {
     line-height: 20px;
     padding: 2em;
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: .9em;
     text-align: center;
 }
@@ -201,6 +201,7 @@ a.menu-link {
 }
 .eventphoto h3 {
   margin-bottom: 0;
+  padding: 0;
   color: white;
 }
 .eventphoto {
@@ -255,7 +256,7 @@ a.menu-link {
   margin-top: 0;
   width: 100%;
   padding: 2em;
-  max-height: 170px;
+  max-height: 180px;
 }
 
 .blends {
@@ -351,7 +352,7 @@ dd {
       border: 3px solid #D2D1C0;
       color: white;
       text-decoration: none;
-      font-family: Helvetica, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       transition: .3s background-color ease-in-out;
   }
   .button:hover, .button:focus {
@@ -428,7 +429,7 @@ footer {
       margin-top:7%;
       padding: 1.5em;
       color: white;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       text-align: center;
       left: 50px;
   }
@@ -496,7 +497,7 @@ div.fixed-rectangle {
     line-height: 20px;
     padding: 2em;
     color: white;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: .9em;
     text-align: center;
 }
@@ -557,6 +558,9 @@ div.fixed-rectangle {
 .coffee p {
   margin-bottom: 0;
 }
+h3 {
+  padding: 1em;
+}
 .bakery {
     background-image: url(photos/muffin.jpg);
     background-position: 0 -60px;
@@ -586,11 +590,14 @@ div.fixed-rectangle {
   margin-bottom: 2em;
 }
 .contentbox-1 {
-  background-color: #D2D1C0;]
+  background-color: #D2D1C0;
   margin: 0;
-  margin-top: 0;
+  margin-top: 3em;
   width: 100%;
   padding: 2em;
+}
+.contentbox-2 {
+  background-color: #D2D1C0;
 }
 @media screen and (min-width: 900px)
 {
@@ -603,5 +610,24 @@ div.fixed-rectangle {
   }
   .menu h2 {
     font-size: 1em
-
+  }
+.coffee h2 {
+  font-size: 25px;
+}
+.tea h2 {
+  font-size: 25px;
+}
+.bakery h2 {
+  font-size: 25px;
+}
+.hero-menu {
+    height: 100vh;
+    background-image: url(photos/smile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.contentbox-2 {
+  background-color: #D2D1C0;
+}
   }
