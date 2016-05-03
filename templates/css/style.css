@@ -17,6 +17,18 @@ body {
    background-color: black;
    margin: 0;
 }
+
+.contentbox-5 {
+  background-color: #D2D1C0;
+  width: 100%;
+  margin: 0;
+  margin-top: 0;
+  padding: 1em;
+}
+.para {
+  color: white;
+  line-height: 1.5em;
+}
 *{
   box-sizing: border-box;
 }
@@ -25,6 +37,10 @@ h1 {
   text-align: center;
   font-size: 1.25em;
   padding: .5em;
+}
+p {
+  margin: 0;
+  padding: 0;
 }
 .events {
   position: absolute;
@@ -187,7 +203,7 @@ a.menu-link {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 1em;
-  width: 50%;
+  width: 50ma
   left: 0;
   right: 0;
   display: block;
@@ -319,6 +335,7 @@ dd {
 
 @media screen and (min-width: 600px)
 {
+
 .hero-image__text h1 {
   font-size: 1.9em;
 }
@@ -416,6 +433,9 @@ footer {
     font-size: 1em
 
   }
+  .para {
+    margin-left: 6em;
+  }
 
   .hero-image {
       height: 100vh;
@@ -476,6 +496,7 @@ div.fixed-rectangle {
 
 
 /* START OF MENU PAGE */
+
 .hero-menu {
     height: 60vh;
     background-image: url(photos/smile.jpg);
@@ -531,12 +552,27 @@ div.fixed-rectangle {
   min-height: 200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 150px;
+  color: black;
+  text-align: left;
 }
-
+.menu th {
+  color: white;
+  font-size: 18px;
+  padding: .3em;
+  text-align: left;
+}
+.menu td {
+  text-align: left;
+}
+.menu h3 {
+  font-size: 22px;
+  color: white;
+  padding-left: 0;
+  text-align: left;
+}
 .coffee {
     background-image: url(photos/hands.jpg);
-    background-position: 0 -30px;
+    background-position: 0 -100px;
 }
 .tea {
     background-image: url(photos/looseleaf.jpg);
@@ -544,26 +580,33 @@ div.fixed-rectangle {
 }
 .tea h3{
   margin: 0;
+  text-align: left;
 
 }
 .bakery h3{
   margin: 0;
+  text-align: left;
 }
 .coffee h3{
   margin: 0;
+  text-align: left;
 }
 .bakery p {
   margin-bottom: 0;
+  text-align: left;
 }
 .coffee p {
   margin-bottom: 0;
+  text-align: left;
 }
 h3 {
   padding: 1em;
+  text-align: left;
 }
 .bakery {
     background-image: url(photos/muffin.jpg);
-    background-position: 0 -60px;
+    background-position: 0 -100px;
+
 }
 .coffee h2 {
   color: #D2D1C0;
@@ -572,6 +615,7 @@ h3 {
   padding: .5em;
   margin-top: 3.5em;
   margin-bottom: 2em;
+  text-align: left;
 }
 .tea h2 {
   color: #D2D1C0;
@@ -580,6 +624,7 @@ h3 {
   padding: .5em;
   margin-top: 3.5em;
   margin-bottom: 2em;
+  text-align: left;
 }
 .bakery h2 {
   color: #D2D1C0;
@@ -588,13 +633,14 @@ h3 {
   padding: .5em;
   margin-top: 3.5em;
   margin-bottom: 2em;
+  text-align: left;
 }
 .contentbox-1 {
   background-color: #D2D1C0;
-  margin: 0;
   margin-top: 3em;
   width: 100%;
-  padding: 2em;
+  padding-bottom: 3em
+  padding: 0 auto;
 }
 .contentbox-2 {
   background-color: #D2D1C0;
@@ -629,5 +675,12 @@ h3 {
 }
 .contentbox-2 {
   background-color: #D2D1C0;
+}
+.logo {
+  padding: 30px;
+}
+.largenav {
+  padding-top: 20px;
+  }
 }
   }
