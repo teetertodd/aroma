@@ -509,20 +509,20 @@ div.fixed-rectangle {
     padding: 0;
 }
 .hero-menu__container {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-    height: 100%;
+  height: 100%;
 }
 
 .hero-menu__text {
-    z-index: 100;
-    line-height: 20px;
-    padding: 2em;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: .9em;
-    text-align: center;
+  z-index: 100;
+  line-height: 20px;
+  padding: 2em;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+  text-align: center;
 }
 
 .hero-menu:after {
@@ -688,6 +688,7 @@ h3 {
 /* START OF ROASTING PAGE! */
 .art {
   font-size: 1.9em;
+
 }
 .hero-roast {
     height: 60vh;
@@ -730,11 +731,17 @@ h3 {
   background-color: #D2D1C0;
   width: 100%;
   padding-bottom: 3em
-  padding: 0 auto;
+  padding: 1em;
 }
 .roaster {
-  padding: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   text-align: center;
+}
+.para {
+  padding: 1em;
+  text-align: center;
+  color: black;
 }
 @media screen and (min-width: 800px) {
 .hero-roast {
@@ -749,7 +756,7 @@ h3 {
       line-height: 28px;
     }
     .art {
-      font-size: 2.2em;
+      font-size: 1em;
     }
 }
 
