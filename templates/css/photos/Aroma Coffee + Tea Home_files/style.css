@@ -347,7 +347,7 @@ dd {
 @media screen and (min-width: 800px)
 {
   h1 {
-    margin: 1em;
+    margin: 0;
   }
   .eventphoto-1 {
     margin-top: 0;
@@ -368,7 +368,6 @@ dd {
       display: inline-block;
       border: 3px solid #D2D1C0;
       color: white;
-      background-color: rgba(0,0,0,.3);
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       transition: .3s background-color ease-in-out;
@@ -685,7 +684,7 @@ h3 {
   }
 }
 /* START OF ROASTING PAGE! */
-.art {
+h1 {
   font-size: 1.9em;
 }
 .hero-roast {
@@ -725,16 +724,6 @@ h3 {
     display: block;
     content: "";
 }
-.contentbox-8 {
-  background-color: #D2D1C0;
-  width: 100%;
-  padding-bottom: 3em
-  padding: 0 auto;
-}
-.roaster {
-  padding: 2em;
-  text-align: center;
-}
 @media screen and (min-width: 800px) {
 .hero-roast {
     height: 100vh;
@@ -742,16 +731,5 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-.hero-roasting__text {
-      font-size: 1em;
-      line-height: 28px;
-    }
-    .art {
-      font-size: 2.2em;
-    }
-}
-
-
 }
 }

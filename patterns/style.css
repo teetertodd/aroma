@@ -1,0 +1,124 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+   background-color: #5D5A59;
+   margin: 3em;
+   text-align: center;
+}
+.button {
+  padding: 1em;
+  margin: 1em 1em 0em 2em;
+  display: inline-block;
+  border: 3px solid #D2D1C0;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0,0,0,.3);
+  transition: .3s background-color ease-in-out;
+}
+.button:hover, .button:focus {
+    background-color: #D2D1C0;
+}
+h1 {
+  text-align: center;
+  padding-top: 1em;
+}
+h2 {
+  text-align: center;
+  color: white;
+  padding-top: 1em;
+}
+.logo {
+  width: 80%;
+  max-width: 400px;
+}
+.swatch {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin: 1em 1.5em;
+}
+.swatch-tan {
+  background-color: #D2D1C0;
+}
+.swatch-black {
+  background-color: black;
+}
+.swatch-white {
+  background-color: white;
+}
+p {
+  font-size: 1.2em;
+}
+.footer {
+  background-color: black;
+}
+dt {
+  font-size: 1.2em;
+  color: #D2D1C0;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1em;
+  margin-top: 1em
+}
+
+dd {
+  margin-left: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  color: white;
+}
+.clearfix:after {
+  display: block;
+  content: “”;
+  display: table;
+  clear: both;
+}
+.eventphoto {
+  margin: 2%;
+  width: 96%;
+  max-width: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.eventphoto-1 {
+    background-image: url(african.jpg);
+    background-position: 0 -60px;
+}
+.eventphoto h2 {
+  color: #D2D1C0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  padding: .5em;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footer {
+    padding: .5em;
+    margin: 2%;
+    margin-bottom: 1em;
+    width: 96%;
+    background-color: black;
+  }
+  .contact {
+    float: left;
+    width: 33.3%;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .clearfix:after {
+      clear: both;
+  }
+}

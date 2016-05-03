@@ -1,0 +1,34 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+   background-color: #5D5A59;
+   margin: 3em;
+   text-align: center;
+}
+h2 {
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 1em;
+}
+.button {
+  padding: 1em;
+  margin: 1em 1em 0em 2em;
+  display: inline-block;
+  border: 3px solid #D2D1C0;
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgba(0,0,0,.3);
+  transition: .3s background-color ease-in-out;
+  text-align: center;
+}
+.button:hover, .button:focus {
+    background-color: #D2D1C0;
+}
+.logo {
+  width: 80%;
+  padding-bottom: 1em;
+}
+p {
+  padding-top: 1em;
+}
