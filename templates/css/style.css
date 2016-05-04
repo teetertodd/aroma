@@ -17,6 +17,14 @@ body {
    background-color: black;
    margin: 0;
 }
+.upcoming {
+  padding: 1em;
+  text-align: center;
+}
+.homepara {
+  line-height: 20px;
+  margin-top: 20px;
+}
 
 .contentbox-5 {
   background-color: #D2D1C0;
@@ -36,7 +44,8 @@ h1 {
   color: white;
   text-align: center;
   font-size: 1.25em;
-  padding: .5em;
+  margin: 0;
+  padding: 0;
 }
 p {
   margin: 0;
@@ -51,9 +60,7 @@ p {
 .largenav {
   display: none;
 }
-.eventphoto-3 {
-  padding-bottom: 1em;
-}
+
 a.menu-link {
           float: right;
               display: block;
@@ -163,7 +170,6 @@ a.menu-link {
 
 
 .hero-image {
-    height: 60vh;
     background-image: url(photos/shadow.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,8 +185,7 @@ a.menu-link {
 }
 
 .hero-image__text {
-    z-index: 100;
-    line-height: 20px;
+    z-index: 100000;
     padding: 2em;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -347,9 +352,6 @@ dd {
 }
 @media screen and (min-width: 800px)
 {
-  h1 {
-    margin: 1em;
-  }
   .eventphoto-1 {
     margin-top: 0;
   }
@@ -545,13 +547,25 @@ div.fixed-rectangle {
   right: 0;
   display: block;
 }
+
+.flavors {
+  text-align: center;
+  padding: 1.2em;
+}
+.flavors h3 {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+.flavors h2 {
+  font-size: 29px;
+}
 .menu {
   margin: 2%;
   width: 96%;
   max-width: 600px;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 200px;
   margin-left: auto;
   margin-right: auto;
   color: black;
@@ -608,7 +622,6 @@ h3 {
 .bakery {
     background-image: url(photos/muffin.jpg);
     background-position: 0 -100px;
-
 }
 .coffee h2 {
   color: #D2D1C0;
@@ -643,9 +656,16 @@ h3 {
   width: 100%;
   padding-bottom: 3em
   padding: 0 auto;
+  min-height: 600px;
+  padding: 2em;
 }
 .contentbox-2 {
   background-color: #D2D1C0;
+}
+.contentbox10 {
+  background-color: #D2D1C0;
+  margin: 2%;
+  width: 96%;
 }
 @media screen and (min-width: 900px)
 {
@@ -653,7 +673,6 @@ h3 {
     float: left;
     width: 31.33333%;
     margin: 1%;
-    min-height: 300px;
     text-align: center;
   }
   .menu h2 {
@@ -684,6 +703,7 @@ h3 {
 .largenav {
   padding-top: 20px;
   }
+
 }
 /* START OF ROASTING PAGE! */
 .art {
@@ -691,7 +711,6 @@ h3 {
 
 }
 .hero-roast {
-    height: 60vh;
     background-image: url(photos/machines.jpg);
     background-repeat: no-repeat;
     background-size: cover;
