@@ -14,17 +14,15 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-   background-color: black;
+   background-color: #1C1C1C;
    margin: 0;
 }
 .upcoming {
-  padding: 1em;
+  padding-top: 2em;
   text-align: center;
+  padding-bottom: 1em;
 }
-.homepara {
-  line-height: 20px;
-  margin-top: 20px;
-}
+
 
 .contentbox-5 {
   background-color: #D2D1C0;
@@ -45,7 +43,7 @@ h1 {
   text-align: center;
   font-size: 1.25em;
   margin: 0;
-  padding: 0;
+  padding-top: 1em;
 }
 p {
   margin: 0;
@@ -89,7 +87,7 @@ a.menu-link {
     position: relative;
     background: white;
     border-radius: 0px; /* Adjust the rounding of the hamburger here */
-    z-index: 1;
+    z-index: 100000000000;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -111,7 +109,7 @@ a.menu-link {
 
   .menu-link.active span {
     opacity: 1;
-      background: black;
+      background: white;
     transform: rotate(45deg) translate(-2px, -1px);
   }
 
@@ -185,7 +183,7 @@ a.menu-link {
 }
 
 .hero-image__text {
-    z-index: 100000;
+    z-index: 1;
     padding: 2em;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -221,7 +219,7 @@ a.menu-link {
     color: white;
 }
 .eventphoto h3 {
-  margin-bottom: 0;
+  margin-bottom: 1em;
   padding: 0;
   color: white;
 }
@@ -243,22 +241,6 @@ a.menu-link {
     background-image: url(photos/loose.jpg);
     background-position: 0 -30px;
 }
-.eventphoto-2 h3{
-  margin: 0;
-
-}
-.eventphoto-3 h3{
-  margin: 0;
-}
-.eventphoto-1 h3{
-  margin: 0;
-}
-.eventphoto-3 p {
-  margin-bottom: 0;
-}
-.eventphoto-1 p {
-  margin-bottom: 0;
-}
 .eventphoto-3 {
     background-image: url(photos/valentines.jpg);
     background-position: 0 -60px;
@@ -276,7 +258,7 @@ a.menu-link {
   margin: 0;
   margin-top: 0;
   width: 100%;
-  padding: 2em;
+  padding: 1em;
   max-height: 180px;
   min-height: 180px;
 }
@@ -304,7 +286,7 @@ ul {
 }
 
 footer {
-  background-color: black;
+  background-color: #1C1C1C;
 }
 footer {
   text-align: center;
@@ -339,17 +321,7 @@ dd {
   width: 100%;
 }
 
-@media screen and (min-width: 600px)
-{
 
-.hero-image__text h1 {
-  font-size: 1.9em;
-}
-.hero-image__text p {
-  font-size: 1.2em;
-  line-height: 25px;
-}
-}
 @media screen and (min-width: 800px)
 {
   .eventphoto-1 {
@@ -358,15 +330,11 @@ dd {
   .hero-image {
       height: 100vh;
     }
-    .hero-image__text {
-        padding: 5em;
-      }
       .hero-image__text p {
-        font-size: 1.3em;
         line-height: 27px;
       }
   .button {
-      padding: 1em;
+      padding: 1.5em 2em 1.5em 2em;
       margin: 2em 1em 0em 2em;
       display: inline-block;
       border: 3px solid #D2D1C0;
@@ -387,8 +355,6 @@ div.fixed-rectangle {
 
 .largenav {
   display: block;
-  padding: 0;
-  margin: 0 auto;
   list-style-type: none;
   top: 65%;
   left: 0;
@@ -437,9 +403,6 @@ footer {
     font-size: 1em
 
   }
-  .para {
-    margin-left: 6em;
-  }
 
   .hero-image {
       height: 100vh;
@@ -472,7 +435,6 @@ div.fixed-rectangle {
    background-color: rgb(71,78,89);
 }
 }
-
 
 
 @media screen and (min-width: 1000px)
@@ -515,16 +477,6 @@ div.fixed-rectangle {
   align-items: center;
   justify-content: center;
   height: 100%;
-}
-
-.hero-menu__text {
-  z-index: 100;
-  line-height: 20px;
-  padding: 2em;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: .9em;
-  text-align: center;
 }
 
 .hero-menu:after {
@@ -583,6 +535,7 @@ div.fixed-rectangle {
 .menu h3 {
   font-size: 22px;
   color: white;
+  padding: .5em;
   padding-left: 0;
   text-align: left;
 }
@@ -615,10 +568,7 @@ div.fixed-rectangle {
   margin-bottom: 0;
   text-align: left;
 }
-h3 {
-  padding: 1em;
-  text-align: left;
-}
+
 .bakery {
     background-image: url(photos/muffin.jpg);
     background-position: 0 -100px;
@@ -664,8 +614,9 @@ h3 {
 }
 .contentbox10 {
   background-color: #D2D1C0;
-  margin: 2%;
-  width: 96%;
+  width: 100%;
+  padding-bottom: 2em;
+  padding-top: .5em;
 }
 @media screen and (min-width: 900px)
 {
@@ -700,12 +651,13 @@ h3 {
 .logo {
   padding: 30px;
 }
-.largenav {
-  padding-top: 20px;
-  }
+
 
 }
 /* START OF ROASTING PAGE! */
+.table {
+  margin-bottom: 2em;
+}
 .art {
   font-size: 1.9em;
 
@@ -752,11 +704,7 @@ h3 {
   padding-bottom: 3em
   padding: 1em;
 }
-.roaster {
-  padding-left: 1em;
-  padding-right: 1em;
-  text-align: center;
-}
+
 .para {
   padding: 1em;
   text-align: center;
@@ -770,15 +718,10 @@ h3 {
     background-size: cover;
     position: relative;
   }
-.hero-roasting__text {
-      font-size: 1em;
-      line-height: 28px;
-    }
     .art {
       font-size: 1em;
     }
-}
-
-
-}
+.para {
+      font-size: 20px;
+    }
 }
