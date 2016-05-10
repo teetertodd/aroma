@@ -19,8 +19,9 @@ body {
 }
 .upcoming {
   padding-top: 2em;
-  text-align: center;
-  padding-bottom: 1em;
+}
+.press {
+  padding-top: 2em;
 }
 
 h5 {
@@ -59,6 +60,7 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .events {
   position: absolute;
   color: white;
@@ -336,10 +338,15 @@ dd {
   h1 {
     font-size: 2.2em;
   }
+  .flavors p {
+    margin-left: 5em;
+    margin-right: 5em;
+  }
 }
 
 @media screen and (min-width: 800px)
 {
+
   .eventphoto-1 {
     margin-top: 0;
   }
@@ -411,7 +418,7 @@ footer {
   .eventphoto {
     float: left;
     width: 31.33333%;
-    margin: 1%;
+    margin: 0 1%;
     min-height: 300px;
     max-width: 100%;
   }
@@ -469,6 +476,10 @@ div.fixed-rectangle {
 }
 .button {
   margin-bottom: 6em;
+}
+.flavors p {
+  margin-left: 20em;
+  margin-right: 20em;
 }
 }
 
@@ -558,11 +569,14 @@ div.fixed-rectangle {
 .coffee {
     background-image: url(photos/hands.jpg);
     background-position: 0 -100px;
+    background-size: 280%;
 }
 .tea {
     background-image: url(photos/looseleaf.jpg);
     background-position: 0 -30px;
+    background-size: 230%;
 }
+
 .tea h3{
   margin: 0;
   text-align: left;
@@ -588,6 +602,7 @@ div.fixed-rectangle {
 .bakery {
     background-image: url(photos/muffin.jpg);
     background-position: 0 -100px;
+    background-size: 230%;
 }
 .coffee h2 {
   color: #D2D1C0;
